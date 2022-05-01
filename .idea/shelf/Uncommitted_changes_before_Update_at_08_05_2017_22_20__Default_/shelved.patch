@@ -1,0 +1,10 @@
+Index: GamestoreWS/src/main/java/by/bsuir/gamestore/ws/dao/UserDAO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package by.bsuir.gamestore.ws.dao;\n\nimport by.bsuir.gamestore.ws.entity.User;\n\npublic interface UserDao extends GenericDao<User, Integer> {\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- GamestoreWS/src/main/java/by/bsuir/gamestore/ws/dao/UserDAO.java	(date 1494262516000)
++++ GamestoreWS/src/main/java/by/bsuir/gamestore/ws/dao/UserDao.java	
+@@ -1,0 +1,0 @@

@@ -1,0 +1,36 @@
+﻿
+<div class="col-md-9" >
+    <div class="reveal-animation">
+        <div class="row carousel-holder">
+            <div>
+                <div class="col-md-12">
+                    <div style="">
+                        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                            <div uib-slide ng-repeat="slide in slides" index="slide.num">
+                                <a href="/Game/{{slide.id}}"><img ng-src="{{slide.poster}}" style="margin:auto;" class="slideImage"></a>
+                                <!--<div class="carousel-caption">
+                                    <p>{{slide.title}}</p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr />
+        <h3>Рейтинговые</h3>
+        <div class="row">
+            <div ng-repeat="game in RatedGames">
+                <div game-tile></div>
+            </div>
+        </div>
+        <hr />
+        <h3>Комментируемые</h3>
+        <div class="row">
+            <div ng-repeat="game in CommnetedGames">
+                <div game-tile></div>
+            </div>
+        </div>
+    </div>
+</div>

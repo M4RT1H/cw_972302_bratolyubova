@@ -132,7 +132,7 @@
         <div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Course work - GameStore 2017</p>
+                    <p>Copyright &copy; Course work - GameStore 2022</p>
                 </div>
             </div>
         </div>

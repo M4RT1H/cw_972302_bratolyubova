@@ -8,14 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c5e2165d-9280-40c2-b97f-50b54aa4464d" name="Default" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamestoreWS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/Images/All/1ff4ec43-ec53-4c0b-9c95-66b1ef4b50fe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/Images/All/fc908bc8-0ca1-4e27-ab42-f05cea50fc2e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/html/User/UpdateUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/html/User/UpdateUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +306,7 @@
       <recent name="by.bsuir.gamestore.ws.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameControllerTest.TestGameController_DeleteAllGenres">
+  <component name="RunManager" selected="JUnit.UserControllertTest.TestUserController_GetOrders">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -491,7 +483,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameControllerTest.loginExistingUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllertTest.TestUserController_Authorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main" />
       <extension name="coverage">
         <pattern>
@@ -500,8 +492,42 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.bsuir.gamestore.ws.service" />
-      <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.GameControllerTest" />
-      <option name="METHOD_NAME" value="loginExistingUserTest" />
+      <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.UserControllertTest" />
+      <option name="METHOD_NAME" value="TestUserController_Authorization" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllertTest.TestUserController_GetOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.bsuir.gamestore.ws.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.bsuir.gamestore.ws.service" />
+      <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.UserControllertTest" />
+      <option name="METHOD_NAME" value="TestUserController_GetOrders" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllertTest.TestUserController_Registration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.bsuir.gamestore.ws.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.bsuir.gamestore.ws.service" />
+      <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.UserControllertTest" />
+      <option name="METHOD_NAME" value="TestUserController_Registration" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -665,9 +691,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllertTest.TestUserController_GetOrders" />
+        <item itemvalue="JUnit.UserControllertTest.TestUserController_Registration" />
+        <item itemvalue="JUnit.UserControllertTest.TestUserController_Authorization" />
         <item itemvalue="JUnit.GameControllerTest.TestGameController_DeleteAllGenres" />
         <item itemvalue="JUnit.GameControllerTest.TestGameController_GetComments" />
-        <item itemvalue="JUnit.GameControllerTest.loginExistingUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -711,7 +739,7 @@
       <workItem from="1651571668353" duration="980000" />
       <workItem from="1651572679691" duration="7248000" />
       <workItem from="1651585810615" duration="2453000" />
-      <workItem from="1651600670303" duration="10929000" />
+      <workItem from="1651600670303" duration="11787000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1651440597830</created>
@@ -727,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651491748522</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <created>1651613524672</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651613524672</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

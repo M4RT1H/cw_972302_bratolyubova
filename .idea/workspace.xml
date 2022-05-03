@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e2165d-9280-40c2-b97f-50b54aa4464d" name="Default" comment=".">
+    <list default="true" id="c5e2165d-9280-40c2-b97f-50b54aa4464d" name="Default" comment="tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -288,12 +288,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/GamestoreWS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -306,7 +306,7 @@
       <recent name="by.bsuir.gamestore.ws.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllertTest.TestUserController_GetOrders">
+  <component name="RunManager" selected="JUnit.UserControllertTest.TestUserController_SetRole">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -466,23 +466,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameControllerTest.TestGameController_GetComments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.bsuir.gamestore.ws.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.bsuir.gamestore.ws.service" />
-      <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.GameControllerTest" />
-      <option name="METHOD_NAME" value="TestGameController_GetComments" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserControllertTest.TestUserController_Authorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main" />
       <extension name="coverage">
@@ -528,6 +511,23 @@
       <option name="PACKAGE_NAME" value="by.bsuir.gamestore.ws.service" />
       <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.UserControllertTest" />
       <option name="METHOD_NAME" value="TestUserController_Registration" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllertTest.TestUserController_SetRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.bsuir.gamestore.ws.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.bsuir.gamestore.ws.service" />
+      <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.UserControllertTest" />
+      <option name="METHOD_NAME" value="TestUserController_SetRole" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -691,11 +691,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllertTest.TestUserController_SetRole" />
         <item itemvalue="JUnit.UserControllertTest.TestUserController_GetOrders" />
         <item itemvalue="JUnit.UserControllertTest.TestUserController_Registration" />
         <item itemvalue="JUnit.UserControllertTest.TestUserController_Authorization" />
         <item itemvalue="JUnit.GameControllerTest.TestGameController_DeleteAllGenres" />
-        <item itemvalue="JUnit.GameControllerTest.TestGameController_GetComments" />
       </list>
     </recent_temporary>
   </component>
@@ -739,7 +739,7 @@
       <workItem from="1651571668353" duration="980000" />
       <workItem from="1651572679691" duration="7248000" />
       <workItem from="1651585810615" duration="2453000" />
-      <workItem from="1651600670303" duration="11787000" />
+      <workItem from="1651600670303" duration="13175000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1651440597830</created>
@@ -762,7 +762,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651613524672</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tests">
+      <created>1651614432427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651614432427</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -827,7 +834,8 @@
     </ignored-roots>
     <MESSAGE value="initial commit" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

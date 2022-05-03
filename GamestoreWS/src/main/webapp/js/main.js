@@ -5,7 +5,6 @@ app.controller("SideMenuController", function ($scope, SideMenuService) {
 
     $scope.Items = SideMenuService.Get();
 
-
 });
 
 app.controller("NavBarController", [
@@ -386,21 +385,20 @@ app.controller("CartController", [
 
             LoadBarService.Show();
 
-            var promises = [];
-            $scope.Games.forEach(function (game) {
-                var promise = $http({
-                    url: "order/place",
-                    method: "Post",
-                    data: {
-                        game: {id: game.id},
-                        user: {id: user.data.id}
-                    }
-                });
 
-                promises.push(promise);
+            var orderData = $scope.Games.map(function (game) {
+                return {
+                    game: {id: game.id},
+                    user: {id: user.data.id}
+                };
             });
 
-            $q.all(promises).then(function (val) {
+
+            $http({
+                url: "order/place",
+                method: "Post",
+                data: orderData
+            }).then(function (val) {
                 LoadBarService.Hide();
 
                 CartService.Clear(user.data.id);
@@ -604,14 +602,9 @@ app.controller("UsersController", [
         }
 
         $scope.MakeModer = function (id) {
-            // var user = {
-            //    "Id": id,
-            //   "RoleId": 1
-            // };
             $http({
                 url: "user/set/role/1?userId=" + id,
                 method: "POST",
-                //data: JSON.stringify(user)
             }).then(function (val) {
 
                 UpdateUsers();
@@ -619,14 +612,9 @@ app.controller("UsersController", [
         }
 
         $scope.MakeUser = function (id) {
-            //var user = {
-            //   "Id": id,
-            //   "RoleId": 2
-            //};
             $http({
                 url: "user/set/role/2?userId=" + id,
                 method: "POST",
-                //data: JSON.stringify(user)
             }).then(function (val) {
 
                 UpdateUsers();
@@ -653,7 +641,7 @@ app.controller("SearchController", [
 
                 LoadBarService.Hide();
             } catch (ex) {
-                //alert(ex);
+
             }
         });
 
@@ -687,7 +675,7 @@ app.controller("LoginController", [
                 if (val === true)
                     $location.path("/");
                 else
-                    $scope.errors = ["Не верный логин и/или пароль!"];
+                    $scope.errors = ["Неверный логин и/или пароль!"];
 
                 LoadBarService.Hide();
             });
@@ -821,7 +809,7 @@ app.controller("UpdateUserController", [
                 $scope.errors.push("Пароли не совпадают");
 
             if ($scope.user.data.password !== $scope.OldPassword)
-                $scope.errors.push("Не верный старый пароль!");
+                $scope.errors.push("Неверный старый пароль!");
 
             if ($scope.errors.length !== 0)
                 return;
@@ -2168,6 +2156,7 @@ app.service("GenreService", ["$http", "$q",
 
                 return def.promise;
             },
+
             Delete: function (id) {
                 var def = $q.defer();
 

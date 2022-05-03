@@ -16,14 +16,20 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController extends GenericController<Order, Integer> {
 
     @Autowired
-    public OrderController(OrderService orderService){
+    public OrderController(OrderService orderService) {
         super(orderService, LogManager.getLogger());
     }
 
     @RequestMapping(value = "/place", method = RequestMethod.POST)
-    public ResponseEntity<Order> place(@RequestBody Order entity) {
-        entity.setOrderKey(java.util.UUID.randomUUID().toString());
-        return super.addEntity(entity);
+    public ResponseEntity<Order> place(@RequestBody Order[] entity) {
+        for (Order o : entity) {
+            o.setOrderKey(java.util.UUID.randomUUID().toString());
+            if (!super.getService().isAlreadyExist(o)) {
+                super.getService().add(o);
+            }
+        }
+
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 }
 

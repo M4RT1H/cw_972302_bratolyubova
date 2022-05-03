@@ -24,7 +24,7 @@ public class GameController extends GenericController<Game, Integer> {
 
 
     @Autowired
-    GameController(GameService gameService, GenreService genreService, CommentService commentService) {
+    public GameController(GameService gameService, GenreService genreService, CommentService commentService) {
         super(gameService, LogManager.getLogger());
         this.genreService = genreService;
         this.commentService = commentService;

@@ -9,13 +9,14 @@
     <version>1.0-SNAPSHOT</version>
     <name>Gamestore Maven Webapp</name>
     <url>http://maven.apache.org</url>
- 
+
     <properties>
         <spring.version>4.3.6.RELEASE</spring.version>
         <hibernate.version>4.3.5.Final</hibernate.version>
         <log4j.version>2.8.2</log4j.version>
         <jdk.version>1.8</jdk.version>
         <context.path>context-path</context.path>
+        <junit.version>5.7.2</junit.version>
     </properties>
 
     <build>
@@ -53,6 +54,27 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Mockito -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
             <scope>test</scope>
         </dependency>
 

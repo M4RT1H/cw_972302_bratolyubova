@@ -6,8 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5e2165d-9280-40c2-b97f-50b54aa4464d" name="Default" comment="">
+    <list default="true" id="c5e2165d-9280-40c2-b97f-50b54aa4464d" name="Default" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamestoreWS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/Images/All/1ff4ec43-ec53-4c0b-9c95-66b1ef4b50fe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/Images/All/fc908bc8-0ca1-4e27-ab42-f05cea50fc2e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/html/User/UpdateUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/html/User/UpdateUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/GamestoreWS/src/main/webapp/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +28,8 @@
         <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -275,23 +285,36 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GamestoreWS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\BSUIR\CW\sitaris-course-project\GamestoreWS\src\main\webapp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="by.bsuir.gamestore.ws.entity" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GameControllerTest.TestGameController_DeleteAllGenres">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -433,6 +456,57 @@
       <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
       <method v="2" />
+    </configuration>
+    <configuration name="GameControllerTest.TestGameController_DeleteAllGenres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.bsuir.gamestore.ws.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.bsuir.gamestore.ws.service" />
+      <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.GameControllerTest" />
+      <option name="METHOD_NAME" value="TestGameController_DeleteAllGenres" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameControllerTest.TestGameController_GetComments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.bsuir.gamestore.ws.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.bsuir.gamestore.ws.service" />
+      <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.GameControllerTest" />
+      <option name="METHOD_NAME" value="TestGameController_GetComments" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameControllerTest.loginExistingUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.bsuir.gamestore.ws.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.bsuir.gamestore.ws.service" />
+      <option name="MAIN_CLASS_NAME" value="by.bsuir.gamestore.ws.service.GameControllerTest" />
+      <option name="METHOD_NAME" value="loginExistingUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -589,6 +663,13 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameControllerTest.TestGameController_DeleteAllGenres" />
+        <item itemvalue="JUnit.GameControllerTest.TestGameController_GetComments" />
+        <item itemvalue="JUnit.GameControllerTest.loginExistingUserTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -622,6 +703,15 @@
       <workItem from="1651318377046" duration="38896000" />
       <workItem from="1651439907283" duration="1363000" />
       <workItem from="1651441357508" duration="698000" />
+      <workItem from="1651491588267" duration="172000" />
+      <workItem from="1651497239022" duration="529000" />
+      <workItem from="1651498289886" duration="1395000" />
+      <workItem from="1651500480415" duration="834000" />
+      <workItem from="1651521571814" duration="888000" />
+      <workItem from="1651571668353" duration="980000" />
+      <workItem from="1651572679691" duration="7248000" />
+      <workItem from="1651585810615" duration="2453000" />
+      <workItem from="1651600670303" duration="10929000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1651440597830</created>
@@ -630,7 +720,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651440597831</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".">
+      <created>1651491748522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651491748522</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -694,16 +791,12 @@
       <path value="$PROJECT_DIR$/GamestoreWS/src/main" />
     </ignored-roots>
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/OrderController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/GamestoreWS/src/main/java/by/bsuir/gamestore/ws/controller/GenericController.java</url>
           <line>61</line>
